@@ -1,281 +1,437 @@
 <!doctype html>
 <html>
-<title>Example</title>
+
+<head>
+   <title>Example</title>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   <link rel="stylesheet"  type="text/css" href="Css/style.css">
-<body>
- <div class="main">
-    <div class="first" style="flex: 1; position: sticky;"> 
-       <p class="head">GeekyAnts</p>
-       <p align="left" style="padding-bottom: 20px">main</p>
-       <ul>
-        <li >
-           <div class="check">
-             <i class="fa fa-bars icons" ></i>
-             <p style="padding-right: 80px">Dashboard </p>
-             <div class="box hello " ><p>2</p></div>  
-           </div>
-        </li>   
-        <li >
+   <link rel="stylesheet" type="text/css" href="Css/style.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <script>
+      $(document).ready(function () {
+         $(".tbi").click(function () {
+            $(".main").toggleClass("toggleSidebar");
+
+         });
+      });
+
+   </script>
+</head>
+
+<body class="main">
+   <div class="sidebar" id="side">
+      <div>
+         <p class="head">GeekyAnts</p>
+         <p class="main-para">main</p>
+      </div>
+
+      <ul>
+         <li>
             <div class="check">
-             <i class="fa fa-calendar-o icons"></i>
-             <p>Calender </p>
-            </div>
-        </li>
-        <li >
-           <div class="check">
-             <i class="fa fa-envelope icons" ></i>
-             <p>Email </p>
-             <i class="fa fa-angle-right hello"  style="padding-left: 120px"></i>
-             </div>
-        </li>
-        <li >
-           <div class="check">
-             <i class="fa fa-cube icons" ></i>
-             <p>Ui Elements</p>
-             <i class="fa fa-angle-right hello"  style="padding-left: 80px"></i>
-           </div>
-        </li>
-        <li >
-           <div class="check">
-             <i class="fa fa-file icons" ></i>
-             <p style="padding-right: 110px">Forms </p>
-             <div class="box hello" style="background-color: #11DFAF"><p>9</p></div>  
-           </div>
-        </li> 
-        <li >
-           <div class="check">
-              <i class="fa fa-pie-chart icons" ></i>
-              <p>Chart </p>
-              <i class="fa fa-angle-right hello"  style="padding-left: 125px"></i>
-          </div>
-        </li>
-        <li >
-           <div class="check">
-              <i class="fa fa-table icons" ></i>
-              <p>Table </p>
-              <i class="fa fa-angle-right hello"  style="padding-left: 125px"></i>
-            </div>
-        </li>
-        <li >
-           <div class="check">
-               <i class="fa fa-smile-o icons" ></i>
-               <p>Icons </p>
-               <i class="fa fa-angle-right hello"  style="padding-left: 128px"></i>
+               <i class="fa fa-bars icons"></i>
+               <p style="padding-right: 80px">Dashboard </p>
+               <div class="box">
+                  <p>2</p>
                </div>
-        </li>
-        <li >
-           <div class="check">
-               <i class="fa fa-map-marker icons" ></i>
+            </div>
+         </li>
+         <li>
+            <div class="check">
+               <i class="fa fa-calendar-o icons"></i>
+               <p>Calender </p>
+            </div>
+         </li>
+         <li>
+            <div class="check">
+               <i class="fa fa-envelope icons"></i>
+               <p>Email </p>
+               <i class="fa fa-angle-right " style="padding-left: 127px;float: right"></i>
+            </div>
+         </li>
+         <li>
+            <div class="check">
+               <i class="fa fa-cube icons"></i>
+               <p>Ui Elements</p>
+               <i class="fa fa-angle-right hello" style="padding-left: 80px"></i>
+            </div>
+         </li>
+         <li>
+            <div class="check">
+               <i class="fa fa-file icons"></i>
+               <p style="padding-right: 110px">Forms </p>
+               <div class="box hello" style="background-color: #11DFAF">
+                  <p>9</p>
+               </div>
+            </div>
+         </li>
+         <li>
+            <div class="check">
+               <i class="fa fa-pie-chart icons"></i>
+               <p>Chart </p>
+               <i class="fa fa-angle-right hello" style="padding-left: 125px"></i>
+            </div>
+         </li>
+         <li>
+            <div class="check">
+               <i class="fa fa-table icons"></i>
+               <p>Table </p>
+               <i class="fa fa-angle-right hello" style="padding-left: 125px"></i>
+            </div>
+         </li>
+         <li>
+            <div class="check">
+               <i class="fa fa-smile-o icons"></i>
+               <p>Icons </p>
+               <i class="fa fa-angle-right hello" style="padding-left: 128px"></i>
+            </div>
+         </li>
+         <li>
+            <div class="check">
+               <i class="fa fa-map-marker icons"></i>
                <p style="padding-right: 120px">Maps </p>
-               <div class="box hello" style="background-color: #fa4564" ><p>2</p></div>  
-           </div>
-        </li>   
-    </ul>    
+               <div class="box hello" style="background-color: #fa4564">
+                  <p>2</p>
+               </div>
+            </div>
+         </li>
+      </ul>
    </div>
-    <div class="second" style="flex: 6">
-        <div class="top">
-             <div>   
-                <i class="fa fa-bars icons tbi" ></i>
-                    <select class="drop">
-                    <option value="create">Create</option>
-                </select>
-             </div>
-          <div class="topright">
-             <input type="text" placeholder="Search.." name="search" class="searches">
-             <i class="fa fa-search sear" style="font-size: 10px;padding-top: 5px"></i>
-             <i class="fa fa-flag" style="padding: 7px 10px 4px 15px;font-size: 15px;"></i>
-             <p style="font-size: 15px;padding-top: 6px;padding-right: 5px ">English</p>
-             <i class="fa fa-angle-down"  style="padding-top: 9px;font-size: 7px"></i>
-             <i class="fa fa-th"  style="padding:6px 10px 0px 25px ;font-size: 17px"></i>
-             <i class="fa fa-bell"  style="font-size: 18px;padding: 6px 15px 0px 10px"></i>
-             <div class="upper " ><p>3</p></div> 
-             <img  class="pic"src="Pics/pic.jpg" style="margin-top:2px;margin-right: 15px;">
-          </div>
-        </div>
-         <div class="middle" style="flex: 10;background-color: #f8f8f8">
-              <div style="flex: 3; display: flex; justify-content: space-between;margin-bottom: 25px">
-                 <div style="padding: 20px">
-                     <h3 style="color:#6b6b6d">Dashboard</h3>
-                     <p style="color:#868588"> Welcome to veltrix dashboard</p> 
-                  </div>
-                  <div style="display: flex;margin: 20px;border: none;border-radius: 5px; padding-top: 10px;padding-left: 10px;padding-right: 10px;background-color:#6269d9;color: white;height: 30px;">
-                     <i class="fa fa-cog" aria-hidden="true"></i>
-                     <p style="padding-left: 5px;">Settings</p>
-                  </div>
-              </div>
-             <div style="background-color: #f8f8f8">   
-                 <div style="
-                             display: flex;
-                             justify-content: space-around;
-                            
-                             ">
-                   <div  class="cards gridd">
-                          <div class="first-row">
-                              <div style="background-color:#7c83db;"><i class="fa fa-file-code-o" aria-hidden="true" style="font-size:40px;padding-top: 10px;color: white;"></i></div>
-                              <div class="second-column">
-                                      <div class="rang">
-                                        <p align = "left" style = " padding-left: 10px ;color: #b1b5fa;;font-size: 20px;">Orders</p>
-                                         <div class="box1" style="background-color:#00a79c">
-                                           <div class="triangle"></div>  
-                                          <p style="padding-top:4px;padding-left:12px;font-size:15px;color:white">+ 12%</p></div>
-                                       </div>
-                                       <div style="display:flex">
-                                          <p style="font-size:20px;padding-left:10px;color:white">1,685</p>
-                                          <i class="fa fa-arrow-up" style="padding-left:22px;font-size: 15px;padding-top: 3px;color: #00a79c"></i>
-                                        </div>
-                                       </div> 
-                               </div>
-                              <div style="display: flex;justify-content: space-around;flex-direction: row;color: #9893ed">
-                              <p style="padding-top:8px;">Since last month</p>
-                              <i class="fa fa-arrow-right"  align="right" style="font-size:10px;padding-top: 13px;padding-left: 15px"></i>
-                              </div>
-                   </div>
+   <div class="second">
+      <div class="top">
+         <div>
+            <i class="fa fa-bars icons tbi"></i>
 
-
-
-                   <div  class="cards gridd">
-                        <div class="first-row">
-                            <div style="background-color:#7c83db;"><i class="fa fa-clipboard" aria-hidden="true " style="font-size:40px;padding-top: 10px;color: white;"></i>
-                              </div>
-                            <div class="second-column">
-                                    <div class="rang">
-                                      <p align = "left" style = " padding-left: 10px;color: #b1b5fa;font-size: 20px;">Revenue</p>
-                                       <div class="box1" style="background-color:#ff0057">
-                                         <div class="triangle"></div>  
-                                        <p style="padding-top:4px;padding-left:12px;font-size:15px;color:white">- 28%</p></div>
-                                     </div>
-                                     <div style="display:flex">
-                                        <p style="font-size:20px;padding-left:10px;color:white">52,368</p>
-                                        <i class="fa fa-arrow-down" style="padding-left:22px;font-size: 15px;padding-top: 3px;color: #ff0057"></i>
-
-                                      </div>
-                                     </div> 
-                             </div>
-                            <div style="display: flex;justify-content: space-around;flex-direction: row;color: #9893ed">
-                            <p style="padding-top:8px;">Since last month</p>
-                            <i class="fa fa-arrow-right"  align="right" style="font-size:10px;padding-top: 13px;padding-left: 15px"></i>
-                            </div>
-                 </div>
-
-
-
-                 <div  class="cards gridd">
-                     <div class="first-row">
-                         <div style="background-color:#7c83db;"><i class="fa fa-pencil-square-o" aria-hidden="true" style="font-size:40px;padding-top: 10px;color: white;"></i></div>
-                         <div class="second-column">
-                                 <div class="rang">
-                                   <p align = "left" style = " padding-left: 10px;color: #b1b5fa;;font-size: 20px;">Average</p>
-                                    <div class="box1" style="background-color:#00a1fb">
-                                      <div class="triangle"></div>  
-                                     <p style="padding-top:4px;padding-left:12px;font-size:15px;color:white">+ 00%</p></div>
-                                  </div>
-                                  <div style="display:flex">
-                                     <p style="font-size:20px;padding-left:10px;color:white">15.8</p>
-                                     <i class="fa fa-arrow-up" style="padding-left:22px;font-size: 15px;padding-top: 3px;color: #00a79c"></i>
-                                   </div>
-                                  </div> 
-                          </div>
-                         <div style="display: flex;justify-content: space-around;flex-direction: row;color: #9893ed">
-                         <p style="padding-top:8px;">Since last month</p>
-                         <i class="fa fa-arrow-right"  align="right" style="font-size:10px;padding-top: 13px;padding-left: 15px"></i>
-                         </div>
-              </div>
-
-
-
-              <div  class="cards gridd">
-                  <div class="first-row">
-                      <div style="background-color:#7c83db;"><i class="fa fa-briefcase" aria-hidden="true" style="font-size:40px;padding-top: 10px;color: white;"></i></div>
-                      <div class="second-column">
-                              <div class="rang">
-                                <p align = "left" style = " padding-left: 10px;color: #b1b5fa;font-size: 20px;">Product</p>
-                                 <div class="box1" style="background-color:#ffb600">
-                                   <div class="triangle"></div>  
-                                  <p style="padding-top:4px;padding-left:12px;font-size:15px;color:white">+ 84%</p></div>
-                               </div>
-                               <div style="display:flex">
-                                  <p style="font-size:20px;padding-left:10px;color:white">2436</p>
-                                  <i class="fa fa-arrow-up" style="padding-left:22px;font-size: 15px;padding-top: 3px;color: #00a79c"></i>
-                                </div>
-                               </div> 
-                       </div>
-                      <div style="display: flex;justify-content: space-around;flex-direction: row;color:#9893ed">
-                      <p style="padding-top:8px;">Since last month</p>
-                      <i class="fa fa-arrow-right"  align="right" style="font-size:10px;padding-top: 13px;padding-left: 15px"></i>
-                      </div>
-           </div>
-                </div>  
-             </div>
-             <div style="flex: 30;background-color:#f8f8f8;display: flex; justify-content: space-between;">
-                <div style="flex-basis: 66%;background-color: firebrick;margin: 20px;padding: 20px;background-color:white">
-                     <h4  style="padding-bottom: 10px"> Latest Transaction</h4>
-                     <table>
-                        <tr>
-                           <th>(#)Id</th>
-                            <th >Name</th>
-                            <th>   </th>
-                            <th>Date</th>
-                            <th>Amount</th>
-                            <th>Status</th>
-                            <th> </th>
-                         </tr>
-                         <tr>
-                            <td>#12456</td>
-                             <td style="width: 50px;padding-left: 10px" ><img  class="pic"src="Pics/pic.jpg" style="margin-top:2px;margin-right: 10px;"> </td>
-                            <td> <p>Lionel Messi</p></td>  
-                             <td>15/1/2019</td>
-                             <td>$94</td>
-                             <td><div class="delivered"><p>Delivered</p></div></td>
-                             <td><div class="edit"><p>Edit</p></div></td>
-                         </tr>
-                        <tr>
-                            <td>#12456</td>
-                             <td  style="width: 50px;padding-left: 10px"><img  class="pic"src="Pics/pic.jpg" style="margin-top:2px;margin-right: 10px;"> </td>
-                            <td> <p>Eden Hazard</p></td>  
-                             <td>2/12/2018</td>
-                             <td>$112</td>
-                            <td><div class="pending"><p>Pending</p></div></td>
-                            <td><div class="edit">Edit</div></td>
-                         </tr>
-                          <tr>
-                            <td>#12456</td>
-                             <td  style="width: 50px;padding-left: 10px"><img  class="pic"src="Pics/pic.jpg" style="margin-top:2px;margin-right: 10px;"> </td>
-                            <td> <p>Cristiano Ronaldo</p></td>  
-                             <td>21/6/2019</td>
-                             <td>$116</td>
-                            <td><div class=delivered><p>Delivered</p></div></td>
-                             <td><div class="edit">Edit</div></td>
-                         </tr>
-                          <tr>
-                            <td>#12456</td>
-                             <td style="width: 50px;padding-left: 10px" ><img  class="pic"src="Pics/pic.jpg" style="margin-top:2px;margin-right: 10px;"> </td>
-                            <td> <p>Kyllian Mbappe</p></td>  
-                             <td>16/4/2017</td>
-                             <td>$109</td>
-                             <td><div class="cancel"><p>Cancel</p></div></td>
-                             <td><div class="edit">Edit</div></td>
-                         </tr>
-                         <tr >
-                            <td>#12456</td>
-                             <td  style="width: 50px;padding-left: 10px"><img  class="pic"src="Pics/pic.jpg" style="margin-top:2px;margin-right: 10px;"> </td>
-                            <td > <p>Neymar Jr</p></td>  
-                             <td >3/11/2018</td>
-                             <td>$120</td>
-                             <td><div class=delivered><p>Delivered</p></div></td>
-                             <td><div class="edit">Edit</div></td>
-                         </tr>
-                  </table>
-             </div>  
-                <div style = " display: flex; flex-basis: 34%; background-color: white;margin: 20px ">  <h4 style="padding: 20px">Chat</h4>
-                   
-                </div>              
-               
-             </div>
-             
+            <select class="drop">
+               <option value="create">Create</option>
+            </select>
          </div>
-     
-     </div>
- </div> 
+         <div class="topright">
+            <input type="text" placeholder="Search.." name="search" class="searches">
+            <i class="fa fa-search sear" style="font-size: 10px;padding-top: 5px"></i>
+            <i class="fa fa-flag" style="padding: 7px 10px 4px 15px;font-size: 15px;"></i>
+            <p style="font-size: 15px;padding-top: 6px;padding-right: 5px ">English</p>
+            <i class="fa fa-angle-down" style="font-size: 7px"></i>
+            <i class="fa fa-th" style="padding:6px 10px 0px 25px ;font-size: 17px"></i>
+            <i class="fa fa-bell" style="font-size: 20px;padding: 6px 15px 0px 10px"></i>
+            <div class="upper ">
+               <p>3</p>
+            </div>
+            <img class="pic" src="Pics/pic.jpg" style="margin-top:2px;margin-right: 15px;">
+         </div>
+      </div>
+      <div class="middle">
+
+
+         <div class="one">
+            <div style="padding: 20px">
+               <h3 style="color:#6b6b6d">Dashboard</h3>
+               <p style="color:#868588"> Welcome to veltrix dashboard</p>
+            </div>
+
+         </div>
+         <div class="two" style="padding-top:20px;right: 0;">
+            <div
+               style="width:100px;display: flex; justify-content: space-around ;background-color:#6269d9;color: white;height: 30px;padding-top: 5px;float: right;margin-right: 20px;">
+               <i class="fa fa-cog" aria-hidden="true"></i>
+               <p style="padding-left: 5px">Settings</p>
+            </div>
+         </div>
+         <div class="three">
+            <div class="cards gridd">
+               <div class="first-row">
+                  <div style="background-color:#7c83db;"><i class="fa fa-file-code-o" aria-hidden="true"
+                        style="font-size:40px;padding-top: 10px;color: white;"></i></div>
+                  <div class="second-column">
+                     <div class="rang">
+                        <p align="left" style=" padding-left: 10px ;color: #b1b5fa;;font-size: 20px;">Orders</p>
+                        <div class="box1" style="background-color:#00a79c">
+                           <div class="triangle"></div>
+                           <p style="padding-top:4px;padding-left:12px;font-size:15px;color:white">+ 12%</p>
+                        </div>
+                     </div>
+                     <div style="display:flex">
+                        <p style="font-size:20px;padding-left:10px;color:white">1,685</p>
+                        <i class="fa fa-arrow-up"
+                           style="padding-left:22px;font-size: 15px;padding-top: 3px;color: #00a79c"></i>
+                     </div>
+                  </div>
+               </div>
+               <div class="second-row">
+                  <p class="second-col-p">Since last month</p>
+                  <i class="fa fa-arrow-right second-col-icon" align="right"></i>
+               </div>
+            </div>
+
+
+            <div class="cards gridd">
+               <div class="first-row">
+                  <div style="background-color:#7c83db;"><i class="fa fa-clipboard" aria-hidden="true "
+                        style="font-size:40px;padding-top: 10px;color: white;"></i>
+                  </div>
+                  <div class="second-column">
+                     <div class="rang">
+                        <p align="left" style=" padding-left: 10px;color: #b1b5fa;font-size: 20px;">Revenue</p>
+                        <div class="box1" style="background-color:#ff0057">
+                           <div class="triangle"></div>
+                           <p style="padding-top:4px;padding-left:12px;font-size:15px;color:white">- 28%</p>
+                        </div>
+                     </div>
+                     <div style="display:flex">
+                        <p style="font-size:20px;padding-left:10px;color:white">52,368</p>
+                        <i class="fa fa-arrow-down"
+                           style="padding-left:22px;font-size: 15px;padding-top: 3px;color: #ff0057"></i>
+
+                     </div>
+                  </div>
+               </div>
+               <div class="second-row">
+                  <p class="second-col-p">Since last month</p>
+                  <i class="fa fa-arrow-right second-col-icon" align="right"></i>
+               </div>
+            </div>
+            <div class="cards gridd">
+               <div class="first-row">
+                  <div style="background-color:#7c83db;"><i class="fa fa-pencil-square-o" aria-hidden="true"
+                        style="font-size:40px;padding-top: 10px;color: white;"></i></div>
+                  <div class="second-column">
+                     <div class="rang">
+                        <p align="left" style=" padding-left: 10px;color: #b1b5fa;;font-size: 20px;">Average</p>
+                        <div class="box1" style="background-color:#00a1fb">
+                           <div class="triangle"></div>
+                           <p style="padding-top:4px;padding-left:12px;font-size:15px;color:white">+ 00%</p>
+                        </div>
+                     </div>
+                     <div style="display:flex">
+                        <p style="font-size:20px;padding-left:10px;color:white">15.8</p>
+                        <i class="fa fa-arrow-up"
+                           style="padding-left:22px;font-size: 15px;padding-top: 3px;color: #00a79c"></i>
+                     </div>
+                  </div>
+               </div>
+               <div class="second-row">
+                  <p class="second-col-p">Since last month</p>
+                  <i class="fa fa-arrow-right second-col-icon" align="right"></i>
+               </div>
+            </div>
+            <div class="cards gridd">
+               <div class="first-row">
+                  <div style="background-color:#7c83db;"><i class="fa fa-briefcase" aria-hidden="true"
+                        style="font-size:40px;padding-top: 10px;color: white;"></i></div>
+                  <div class="second-column">
+                     <div class="rang">
+                        <p align="left" style=" padding-left: 10px;color: #b1b5fa;font-size: 20px;">Product</p>
+                        <div class="box1" style="background-color:#ffb600">
+                           <div class="triangle"></div>
+                           <p style="padding-top:4px;padding-left:12px;font-size:15px;color:white">+ 84%</p>
+                        </div>
+                     </div>
+                     <div style="display:flex">
+                        <p style="font-size:20px;padding-left:10px;color:white">2436</p>
+                        <i class="fa fa-arrow-up"
+                           style="padding-left:22px;font-size: 15px;padding-top: 3px;color: #00a79c"></i>
+                     </div>
+                  </div>
+               </div>
+               <div class="second-row">
+                  <p class="second-col-p">Since last month</p>
+                  <i class="fa fa-arrow-right second-col-icon"></i>
+               </div>
+            </div>
+
+         </div>
+         <div class="four">
+            <div class="table-para">
+               <h4 style="padding-bottom: 10px"> Latest Transaction</h4>
+               <table>
+                  <tr>
+                     <th>(#)Id</th>
+                     <th>Name</th>
+                     <th> </th>
+                     <th>Date</th>
+                     <th>Amount</th>
+                     <th>Status</th>
+                     <th> </th>
+                  </tr>
+                  <tr>
+                     <td>#12456</td>
+                     <td style="width: 50px;padding-left: 10px"><img class="pic" src="Pics/pic.jpg"
+                           style="margin-top:2px;margin-right: 10px;"> </td>
+                     <td>
+                        <p>Lionel Messi</p>
+                     </td>
+                     <td>15/1/2019</td>
+                     <td>$94</td>
+                     <td>
+                        <div class="delivered">
+                           <p>Delivered</p>
+                        </div>
+                     </td>
+                     <td>
+                        <div class="edit">
+                           <p>Edit</p>
+                        </div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>#12456</td>
+                     <td style="width: 50px;padding-left: 10px"><img class="pic" src="Pics/pic.jpg"
+                           style="margin-top:2px;margin-right: 10px;"> </td>
+                     <td>
+                        <p>Eden Hazard</p>
+                     </td>
+                     <td>2/12/2018</td>
+                     <td>$112</td>
+                     <td>
+                        <div class="pending">
+                           <p>Pending</p>
+                        </div>
+                     </td>
+                     <td>
+                        <div class="edit">Edit</div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>#12456</td>
+                     <td style="width: 50px;padding-left: 10px"><img class="pic" src="Pics/pic.jpg"
+                           style="margin-top:2px;margin-right: 10px;"> </td>
+                     <td>
+                        <p>Cristiano Ronaldo</p>
+                     </td>
+                     <td>21/6/2019</td>
+                     <td>$116</td>
+                     <td>
+                        <div class=delivered>
+                           <p>Delivered</p>
+                        </div>
+                     </td>
+                     <td>
+                        <div class="edit">Edit</div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>#12456</td>
+                     <td style="width: 50px;padding-left: 10px"><img class="pic" src="Pics/pic.jpg"
+                           style="margin-top:2px;margin-right: 10px;"> </td>
+                     <td>
+                        <p>Kyllian Mbappe</p>
+                     </td>
+                     <td>16/4/2017</td>
+                     <td>$109</td>
+                     <td>
+                        <div class="cancel">
+                           <p>Cancel</p>
+                        </div>
+                     </td>
+                     <td>
+                        <div class="edit">Edit</div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>#12456</td>
+                     <td style="width: 50px;padding-left: 10px"><img class="pic" src="Pics/pic.jpg"
+                           style="margin-top:2px;margin-right: 10px;"> </td>
+                     <td>
+                        <p>Neymar Jr</p>
+                     </td>
+                     <td>3/11/2018</td>
+                     <td>$120</td>
+                     <td>
+                        <div class=delivered>
+                           <p>Delivered</p>
+                        </div>
+                     </td>
+                     <td>
+                        <div class="edit">Edit</div>
+                     </td>
+                  </tr>
+               </table>
+            </div>
+
+         </div>
+         <div class="five">
+            <div class="chat-new">
+               <div class="write-chat">
+                  <P style="background:white">Chat</P>
+               </div>
+               <div class="new-message">
+                  <div>
+                     <img class="message-pic" src="Pics/pic.jpg">
+                     <p class="pic-time">23:34</p>
+                  </div>
+                  <div class="tweet">
+                     <div class="triangle-top"></div>
+                     <div class="message-box john">
+
+                        <div class="message-elements ">
+                           <p class="message-para1">John Doe</p>
+                           <p class="message-para2">Hello !</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="new-message" style="flex-direction:row-reverse">
+                  <div>
+                     <img class="message-pic" src="Pics/pic.jpg">
+                     <p class="pic-time">23:34</p>
+                  </div>
+                  <div class="triangle-right"></div>
+                  <div class="message-box smith">
+                     <div class="message-elements ">
+                        <p class="message-para1" style="align-self:flex-end;margin-right: 10px;margin-top: 3px;">Smith
+                        </p>
+                        <p class="message-para2" style="color:#87888c">Hi, how are you ? what about our next meeting?
+                        </p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="new-message">
+                  <div>
+                     <img class="message-pic" src="Pics/pic.jpg">
+                     <p class="pic-time">23:34</p>
+                  </div>
+                  <div class="tweet">
+                     <div class="triangle-top"></div>
+                     <div class="message-box john">
+                        <div class="message-elements ">
+                           <p class="message-para1">John Doe</p>
+                           <p class="message-para2">Yeah, everything is fine</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="new-message" style="flex-direction:row-reverse">
+                  <div>
+                     <img class="message-pic" src="Pics/pic.jpg">
+                     <p class="pic-time">23:34</p>
+                  </div>
+
+                  <div class="triangle-right"></div>
+                  <div class="message-box smith">
+                     <div class="message-elements ">
+                        <p class="message-para1">Smith</p>
+                        <p class="message-para2" style="color:#87888c">Wow, that's great</p>
+                     </div>
+                  </div>
+
+               </div>
+               <div style="display:flex;justify-content:space-between">
+                  <input type="text" placeholder="Enter your text" name="search"
+                     style="border:1px solid black;border-collapse: collapse;background-color:white;width: 250px;margin-left: 20px ;margin-bottom: 15px;padding: 13px ">
+                  <div class="send">
+                     Send</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   </div>
+
 </body>
+
 </html>
