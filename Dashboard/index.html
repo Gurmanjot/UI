@@ -11,10 +11,35 @@
 
    <script>
       $(document).ready(function () {
-         $(".tbi").click(function () {
-            $(".main").toggleClass("toggleSidebar");
+         var toggled = true;
 
+         $(window).on("resize", function (event) {
+            if ($(this).width() < 851) hide();
+            else show();
          });
+
+         $(".tbi").on("click", function() {
+            if (toggled) {
+               hide();
+               toggled = false;
+            }
+            else {
+               show();
+               toggled = true;
+            }
+         });
+
+         function hide() {
+            $(".sidebar").css({ "visibility": "hidden", "width": 0 });
+            $(".top").css({ "padding-left": 0 });
+            $(".middle").css({ "padding-left": 0 });
+            $(".second").css({ "margin-left": 0 });
+         }
+         function show() {
+            $(".sidebar").css({ "visibility": "visible", "width": "248px" });
+            $(".top").css({ "padding-left": "248px" });
+            $(".second").css({ "margin-left": "248px" });
+         }
       });
 
    </script>
@@ -110,11 +135,11 @@
          <div class="topright">
             <input type="text" placeholder="Search.." name="search" class="searches">
             <i class="fa fa-search sear" style="font-size: 10px;padding-top: 5px"></i>
-            <i class="fa fa-flag" style="padding: 7px 10px 4px 15px;font-size: 15px;"></i>
+            <img src="Pics/usa.svg" alt="usa" style="height: 13px;width: 12px;margin-left: 10px;margin-right: 10px;">
             <p style="font-size: 15px;padding-top: 6px;padding-right: 5px ">English</p>
             <i class="fa fa-angle-down" style="font-size: 7px"></i>
             <i class="fa fa-th" style="padding:6px 10px 0px 25px ;font-size: 17px"></i>
-            <i class="fa fa-bell" style="font-size: 20px;padding: 6px 15px 0px 10px"></i>
+            <i class="fa fa-bell" style="font-size: 20px;padding: 6px 10px 0px 10px"></i>
             <div class="upper ">
                <p>3</p>
             </div>
@@ -243,8 +268,9 @@
          </div>
          <div class="four">
             <div class="table-para">
-               <h4 style="padding-bottom: 10px"> Latest Transaction</h4>
-               <table>
+               <h4 style="padding: 15px 0px"> Latest Transaction</h4>
+               <table class="tables">
+                  <thead>
                   <tr>
                      <th>(#)Id</th>
                      <th>Name</th>
@@ -254,6 +280,8 @@
                      <th>Status</th>
                      <th> </th>
                   </tr>
+               </thead>
+               <tbody>
                   <tr>
                      <td>#12456</td>
                      <td style="width: 50px;padding-left: 10px"><img class="pic" src="Pics/pic.jpg"
@@ -346,6 +374,7 @@
                         <div class="edit">Edit</div>
                      </td>
                   </tr>
+                  </tbody>
                </table>
             </div>
 
