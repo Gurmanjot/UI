@@ -111,7 +111,7 @@ html {
     border: none;
     padding: 0 15px;
     background-color: #f8f9fb;
-  border-radius: 5px;
+    border-radius: 5px;
 }
 
 .topright {
@@ -263,11 +263,11 @@ table {
     border-right: none;
 }
 
- .tables tbody tr:last-child * {
+.tables tbody tr:last-child * {
     border-bottom: none;
-  }
- 
-  th {
+}
+
+th {
     text-align: left;
     padding: 20px 0px;
     border: 1px solid black;
@@ -467,21 +467,7 @@ td {
     border-radius: 10px;
 }
 
-.send {
-    display: flex;
-    margin-left: 5px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    width: fit-content;
-    border: none;
-    border-radius: 5px;
-    padding: 6px;
-    background-color: #00a59b;
-    color: white;
-    height: 30px;
-}
-
- @media screen and (max-width:1380px) {
+@media screen and (max-width:1380px) {
     .four {
         margin-left: 20%;
         width: 100%;
@@ -491,8 +477,9 @@ td {
         margin-left: 30%;
         margin-right: 30%;
     }
-} 
-@media screen and (max-width:1180px){
+}
+
+@media screen and (max-width:1180px) {
     .five {
         margin-left: 28%;
         margin-right: 28%;
@@ -500,14 +487,13 @@ td {
 }
 
 @media screen and (max-width:998px) {
-    
     .five {
         margin-left: 26%;
         margin-right: 26%;
     }
-}  
+}
 
- @media screen and (max-width:928px) {
+@media screen and (max-width:928px) {
     .four {
         margin-left: 15%;
         width: 100%;
@@ -517,7 +503,7 @@ td {
         margin-left: 23%;
         margin-right: 23%;
     }
-}  
+}
 
 @media screen and (max-width:760px) {
     .four {
@@ -529,4 +515,4 @@ td {
         margin-left: 22%;
         margin-right: 22%;
     }
-} 
+}
