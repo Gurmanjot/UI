@@ -1,0 +1,72 @@
+.three {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.navi{
+    padding-left: 170px;
+    padding-right: 170px;
+}
+.cardss {
+    border: 1px solid black;
+    margin: 10px;
+    height: 200px;
+    width: 300px;
+    background-color: #cccccc;
+    border: none;
+    border-radius: 5px;
+}
+
+td {
+    padding: 0px !important;
+}
+
+th {
+    padding-left: 0px !important;
+}
+
+.four {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.six {
+    padding: 0px;
+    height: 500px;
+    background-image: url(https://i.pinimg.com/originals/0f/4d/e2/0f4de20324f311290435c7b56176d8d0.jpg);
+    background-size: 100% 100%;
+    margin-bottom: 20px;
+}
+
+.six-text {
+    padding: 15% 40% 15% 40%;
+}
+
+.para {
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+
+.deckk {
+    margin: 20px 17%;
+
+}
+
+.card-para {
+    margin-bottom: 2px;
+}
+
+.buttonn {
+    width: 100%;
+    height: 45px
+}
+
+.foot {
+    padding: 0px 17%;
+    margin-top: 74px;
+}
